@@ -1,0 +1,116 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Battery BT1
+U 1 1 5FA28042
+P 3900 2500
+F 0 "BT1" H 4008 2546 50  0000 L CNN
+F 1 "6V" H 4008 2455 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 3900 2560 50  0001 C CNN
+F 3 "~" V 3900 2560 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R1
+U 1 1 5FA28464
+P 2900 3050
+F 0 "R1" H 2970 3096 50  0000 L CNN
+F 1 "LDR" H 2970 3005 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_5.0x4.1mm_P3mm_Vertical" V 2950 2800 50  0001 L CNN
+F 3 "~" H 2900 3000 50  0001 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FA28A2C
+P 3400 2450
+F 0 "D1" V 3439 2333 50  0000 R CNN
+F 1 "LED" V 3348 2333 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 3400 2450 50  0001 C CNN
+F 3 "~" H 3400 2450 50  0001 C CNN
+	1    3400 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5FA28FD0
+P 3300 2900
+F 0 "Q1" H 3491 2946 50  0000 L CNN
+F 1 "BC547" H 3491 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3500 2825 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3300 2900 50  0001 L CNN
+	1    3300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FA297AE
+P 3400 2050
+F 0 "R2" H 3470 2096 50  0000 L CNN
+F 1 "330" H 3470 2005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 3330 2050 50  0001 C CNN
+F 3 "~" H 3400 2050 50  0001 C CNN
+	1    3400 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5FA29D34
+P 2900 2350
+F 0 "RV1" H 2831 2396 50  0000 R CNN
+F 1 "100K" H 2831 2305 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA9-H5_Horizontal" H 2900 2350 50  0001 C CNN
+F 3 "~" H 2900 2350 50  0001 C CNN
+	1    2900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2300 3900 1900
+Wire Wire Line
+	3900 1900 3400 1900
+Wire Wire Line
+	3400 2200 3400 2300
+Wire Wire Line
+	3400 2600 3400 2700
+Wire Wire Line
+	2900 2900 3100 2900
+Wire Wire Line
+	2900 2900 2900 2600
+Connection ~ 2900 2900
+Wire Wire Line
+	3050 2350 3050 2600
+Wire Wire Line
+	3050 2600 2900 2600
+Connection ~ 2900 2600
+Wire Wire Line
+	2900 2600 2900 2500
+Wire Wire Line
+	2900 2200 2900 1900
+Wire Wire Line
+	2900 1900 3400 1900
+Connection ~ 3400 1900
+Wire Wire Line
+	2900 3200 3400 3200
+Wire Wire Line
+	3400 3200 3400 3100
+Wire Wire Line
+	3400 3200 3900 3200
+Wire Wire Line
+	3900 3200 3900 2700
+Connection ~ 3400 3200
+$EndSCHEMATC

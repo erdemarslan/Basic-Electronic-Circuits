@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Non Contact AC Tester"
+Date "2020-10-12"
+Rev "v.1.0.0"
+Comp "EraLabs"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5FA1380A
+P 4000 2800
+F 0 "Q1" H 4191 2846 50  0000 L CNN
+F 1 "BC547" H 4191 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4200 2725 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4000 2800 50  0001 L CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 5FA143BE
+P 4450 3000
+F 0 "Q2" H 4641 3046 50  0000 L CNN
+F 1 "BC547" H 4641 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 2925 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4450 3000 50  0001 L CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q3
+U 1 1 5FA1528D
+P 4900 3200
+F 0 "Q3" H 5091 3246 50  0000 L CNN
+F 1 "BC547" H 5091 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 3125 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4900 3200 50  0001 L CNN
+	1    4900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FA158D8
+P 5000 2700
+F 0 "D1" V 5039 2583 50  0000 R CNN
+F 1 "LED" V 4948 2583 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_FlatTop" H 5000 2700 50  0001 C CNN
+F 3 "~" H 5000 2700 50  0001 C CNN
+	1    5000 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5FA16A54
+P 5550 2550
+F 0 "SW1" H 5550 2835 50  0000 C CNN
+F 1 "SW_Push_Dual" H 5550 2744 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 5550 2750 50  0001 C CNN
+F 3 "~" H 5550 2750 50  0001 C CNN
+	1    5550 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FA1784F
+P 6050 2550
+F 0 "R1" V 5843 2550 50  0000 C CNN
+F 1 "R" V 5934 2550 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5980 2550 50  0001 C CNN
+F 3 "~" H 6050 2550 50  0001 C CNN
+	1    6050 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+9V #PWR01
+U 1 1 5FA17D01
+P 6350 2550
+F 0 "#PWR01" H 6350 2400 50  0001 C CNN
+F 1 "+9V" H 6365 2723 50  0000 C CNN
+F 2 "" H 6350 2550 50  0001 C CNN
+F 3 "" H 6350 2550 50  0001 C CNN
+	1    6350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FA187E2
+P 6350 2950
+F 0 "#PWR02" H 6350 2700 50  0001 C CNN
+F 1 "GND" H 6355 2777 50  0000 C CNN
+F 2 "" H 6350 2950 50  0001 C CNN
+F 3 "" H 6350 2950 50  0001 C CNN
+	1    6350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5FA192D0
+P 3500 2800
+F 0 "J1" H 3608 2981 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3608 2890 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3500 2800 50  0001 C CNN
+F 3 "~" H 3500 2800 50  0001 C CNN
+	1    3500 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5FA1A8DE
+P 6550 2700
+F 0 "J2" H 6630 2692 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6630 2601 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6550 2700 50  0001 C CNN
+	1    6550 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2700 6350 2550
+Wire Wire Line
+	6350 2550 6200 2550
+Connection ~ 6350 2550
+Wire Wire Line
+	5900 2550 5750 2550
+Wire Wire Line
+	5750 2550 5750 2750
+Connection ~ 5750 2550
+Wire Wire Line
+	5350 2550 5350 2750
+Wire Wire Line
+	6350 2800 6350 2950
+Wire Wire Line
+	5350 2550 5000 2550
+Connection ~ 5350 2550
+Wire Wire Line
+	5000 2850 5000 3000
+Wire Wire Line
+	4100 2600 4100 2550
+Wire Wire Line
+	4100 2550 4550 2550
+Connection ~ 5000 2550
+Wire Wire Line
+	4550 2800 4550 2550
+Connection ~ 4550 2550
+Wire Wire Line
+	4550 2550 5000 2550
+Wire Wire Line
+	4550 3200 4700 3200
+Wire Wire Line
+	4100 3000 4250 3000
+Wire Wire Line
+	3700 2800 3800 2800
+Wire Wire Line
+	5000 3400 6200 3400
+Wire Wire Line
+	6200 3400 6200 2950
+Wire Wire Line
+	6200 2950 6350 2950
+Connection ~ 6350 2950
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FA1FC9A
+P 6350 2550
+F 0 "#FLG0101" H 6350 2625 50  0001 C CNN
+F 1 "PWR_FLAG" V 6350 2678 50  0000 L CNN
+F 2 "" H 6350 2550 50  0001 C CNN
+F 3 "~" H 6350 2550 50  0001 C CNN
+	1    6350 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FA205CB
+P 6350 2950
+F 0 "#FLG0102" H 6350 3025 50  0001 C CNN
+F 1 "PWR_FLAG" V 6350 3078 50  0000 L CNN
+F 2 "" H 6350 2950 50  0001 C CNN
+F 3 "~" H 6350 2950 50  0001 C CNN
+	1    6350 2950
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

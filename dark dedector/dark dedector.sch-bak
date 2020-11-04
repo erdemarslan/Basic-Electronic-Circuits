@@ -1,0 +1,113 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 5FA1A264
+P 3150 3200
+F 0 "R3" H 3220 3246 50  0000 L CNN
+F 1 "330" H 3220 3155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 3080 3200 50  0001 C CNN
+F 3 "~" H 3150 3200 50  0001 C CNN
+	1    3150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FA1A577
+P 2650 3250
+F 0 "R1" H 2720 3296 50  0000 L CNN
+F 1 "100K" H 2720 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P20.32mm_Horizontal" V 2580 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 5FA1A996
+P 3050 3950
+F 0 "Q1" H 3241 3996 50  0000 L CNN
+F 1 "BC547" H 3241 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3250 3875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3050 3950 50  0001 L CNN
+	1    3050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5FA1AE7C
+P 3150 3550
+F 0 "D1" V 3189 3433 50  0000 R CNN
+F 1 "LED" V 3098 3433 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_Clear" H 3150 3550 50  0001 C CNN
+F 3 "~" H 3150 3550 50  0001 C CNN
+	1    3150 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 5FA1B276
+P 3700 3700
+F 0 "BT1" H 3808 3746 50  0000 L CNN
+F 1 "6V" H 3808 3655 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" V 3700 3760 50  0001 C CNN
+F 3 "~" V 3700 3760 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R2
+U 1 1 5FA1B88C
+P 2650 4100
+F 0 "R2" H 2720 4146 50  0000 L CNN
+F 1 "R_PHOTO" H 2720 4055 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" V 2700 3850 50  0001 L CNN
+F 3 "~" H 2650 4050 50  0001 C CNN
+	1    2650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3500 3700 3050
+Wire Wire Line
+	3700 3050 3150 3050
+Wire Wire Line
+	3150 3350 3150 3400
+Wire Wire Line
+	3150 3700 3150 3750
+Wire Wire Line
+	2650 3400 2650 3650
+Wire Wire Line
+	2650 3100 2650 3050
+Wire Wire Line
+	2650 3050 3150 3050
+Connection ~ 3150 3050
+Wire Wire Line
+	2650 4250 3150 4250
+Wire Wire Line
+	3150 4250 3150 4150
+Wire Wire Line
+	3150 4250 3700 4250
+Wire Wire Line
+	3700 4250 3700 3900
+Connection ~ 3150 4250
+Wire Wire Line
+	2850 3950 2850 3650
+Wire Wire Line
+	2850 3650 2650 3650
+Connection ~ 2650 3650
+Wire Wire Line
+	2650 3650 2650 3950
+$EndSCHEMATC
