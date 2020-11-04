@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Nrf24-Based-Car-Controller-rescue)(type Legacy)(uri "${KIPRJMOD}/Nrf24 Based Car Controller-rescue.lib")(options "")(descr ""))
+)
